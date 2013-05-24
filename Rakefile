@@ -5,3 +5,14 @@
 require File.expand_path('../config/application', __FILE__)
 
 MyBlog::Application.load_tasks
+
+
+require 'rubygems'
+# Install:
+#  sudo gem install ci_reporter
+gem 'ci_reporter'
+
+
+./script/plugin install http://svn.codahale.com/rails_rcov
+
+./script/plugin install http://github.com/troelskn/gemconf_plugin.git
